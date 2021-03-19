@@ -53,6 +53,11 @@ function outputData(person) {
     row.classList.add('auto');
   }
 
+  // Add a class to Auto*
+  if ((new RegExp(/[Aa]merican/gi)).test(person.profession)) {
+    row.classList.add('british');
+  }
+
 }
 
 // The below function will get called when the window finishes loading our data
