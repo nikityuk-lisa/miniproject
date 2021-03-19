@@ -48,14 +48,24 @@ function outputData(person) {
   if ((new RegExp(/[Aa]ustria/gi)).test(person.profession)) {
     row.classList.add('austrian');
   }
-  // Add a class to Auto*
+  // Add a class to Americans
   if ((new RegExp(/[Aa]merican/gi)).test(person.profession)) {
     row.classList.add('auto');
   }
 
-  // Add a class to Auto*
+  // Add a class to British
   if ((new RegExp(/[Bb]ritish/gi)).test(person.profession)) {
     row.classList.add('british');
+  }
+
+  // Add a class to May Death
+  if ((new RegExp(/[Mm]ay/gi)).test(person.month)) {
+    row.classList.add('mayDeaths');
+  }
+
+  // Add a class to British
+  if ((new RegExp(/192/gi)).test(person.birthyear)) {
+    row.classList.add('born20s');
   }
 
 }
